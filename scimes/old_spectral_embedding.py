@@ -11,7 +11,7 @@ https://scikit-learn.org/0.20/whats_new.html#version-0-20-0
 https://github.com/scikit-learn/scikit-learn/pull/9062
 https://github.com/scikit-learn/scikit-learn/issues/8129
 
-Fix proposed by Prof. Tony Wong, University of Illinois, wongt@illinois.edu 
+Fix proposed by Prof. Tony Wong, University of Illinois, wongt@illinois.edu
 """
 
 import warnings
@@ -28,8 +28,8 @@ from sklearn.utils.extmath import _deterministic_vector_sign_flip
 from scipy.sparse.linalg import lobpcg
 
 
-def spectral_embedding(adjacency, *, 
-                       n_components=8, eigen_solver="arpack", random_state=None, 
+def spectral_embedding(adjacency, *,
+                       n_components=8, eigen_solver="arpack", random_state=None,
                        eigen_tol=0.0, norm_laplacian=True, drop_first=True):
 
     adjacency = check_symmetric(adjacency)
